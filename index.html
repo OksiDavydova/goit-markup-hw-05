@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./js/modal.js" />
     <title>Web Studio</title>
   </head>
 
@@ -53,7 +54,7 @@
           <h1 class="hero-title">
             Эффективные решения для вашего бизнеса
           </h1>
-          <button data-toggle-backdrop-sign class="button" type="button">Заказать услугу</button>
+          <button data-modal-open class="button" type="button">Заказать услугу</button>
         </div>
       </section>
 
@@ -421,9 +422,9 @@
       </div>
     </footer>
 
-    <div data-backdrop-sign class="backdrop-sign is-hidden">
-      <div class="modal-sign">
-        <button class="button-close" data-toggle-backdrop-sign type="button">
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="button-close" data-modal-close type="button">
           <svg height="18" width="18">
             <use href="./images/icons.svg#close"></use>
           </svg>
@@ -432,5 +433,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    +
   </body>
 </html>
