@@ -411,10 +411,9 @@ address {
   font-size: 18px;
   line-height: 1.55;
   color: var(--white-color);
-
   background-color: var(--card-overlay-bg-color);
-  transform: translateY(100%);
 
+  transform: translateY(103%);
   transition: transform var(--animation);
 }
 
